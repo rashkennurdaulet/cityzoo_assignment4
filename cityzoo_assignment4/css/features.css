@@ -1,0 +1,34 @@
+/* =====================================================================
+   CITY ZOO — ASSIGNMENT #4 (JavaScript features)
+   Styles for: FAQ accordion, subscription pop-up, footer tools.
+   Loaded after style.css on every page.
+   ===================================================================== */
+
+body { transition: background-color .6s ease; }              /* Task 4: smooth colour change */
+
+/* ---------- Task 2: accordion ---------- */
+.faq-item { background-color: #fff; border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); overflow: hidden; }
+.faq-question { background: transparent; border: 0; color: var(--primary); font-size: 1.05rem; cursor: pointer; transition: background-color .25s ease; }
+.faq-question:hover, .faq-item.open .faq-question { background-color: var(--accent-soft); }
+.faq-icon { color: var(--primary-2); flex-shrink: 0; transition: transform .35s ease; }
+.faq-item.open .faq-icon { transform: rotate(180deg); }
+
+/* hidden by default: height 0; JS sets max-height = real height when opened */
+.faq-panel { max-height: 0; overflow: hidden; visibility: hidden; transition: max-height .35s ease, visibility 0s linear .35s; }
+.faq-item.open .faq-panel { visibility: visible; transition: max-height .35s ease, visibility 0s; }
+
+/* ---------- Task 3: pop-up ---------- */
+.popup-overlay { position: fixed; inset: 0; z-index: 1055; display: none; align-items: center; justify-content: center; overflow-y: auto; background: rgba(11, 61, 46, .65); opacity: 0; transition: opacity .25s ease; }
+.popup-overlay.open { display: flex; }
+.popup-overlay.visible { opacity: 1; }
+.popup-box { position: relative; width: 100%; max-width: 460px; background: #fff; border-radius: var(--radius-lg); border-top: 6px solid var(--gold); box-shadow: var(--shadow-md); transform: translateY(24px) scale(.97); transition: transform .25s ease; }
+.popup-overlay.visible .popup-box { transform: none; }
+.popup-close { position: absolute; top: .75rem; right: .75rem; }
+body.popup-lock { overflow: hidden; }                         /* page does not scroll behind the pop-up */
+
+/* ---------- Task 5: date & time block ---------- */
+.datetime-block { background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .35); font-variant-numeric: tabular-nums; }
+
+@media (prefers-reduced-motion: reduce) {
+  body, .faq-panel, .faq-icon, .popup-overlay, .popup-box { transition: none; }
+}

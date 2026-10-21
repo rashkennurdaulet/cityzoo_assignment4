@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Zoo - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/features.css">
+</head>
+<body>
+    <a class="visually-hidden-focusable" href="#main">Skip to main content</a>
+
+    <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-zoo shadow" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">🦁 City Zoo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-lg-1 py-2 py-lg-0">
+                    <li class="nav-item"><a class="nav-link active fw-semibold rounded-pill px-3" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold rounded-pill px-3" href="animals.html">Animals</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold rounded-pill px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Visit</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="tickets.html">Tickets</a></li>
+                            <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                            <li><a class="dropdown-item" href="map.html">Map</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-semibold rounded-pill px-3" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold rounded-pill px-3" href="contact.html">Contact</a></li>
+                </ul>
+                <button type="button" class="btn btn-warning ms-lg-3 mb-2 mb-lg-0" data-popup-open>Subscribe</button>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main id="main" class="container page-card my-4 mt-lg-5 px-3 px-sm-4 py-4 py-lg-5">
+        <!-- Hero -->
+        <section class="hero-card mb-4 mb-lg-5" aria-label="Welcome banner">
+            <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 p-md-4 p-lg-5 text-white">
+                <h1 class="text-white pb-2 mb-2">Welcome to City Zoo</h1>
+                <p class="mb-3 mw-hero">Discover wildlife, explore natural habitats, and create unforgettable family memories.</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="tickets.html" class="btn btn-warning btn-lg">Get Tickets</a>
+                    <a href="animals.html" class="btn btn-outline-light btn-lg">Explore Animals</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats (col-sm-4 x 3) -->
+        <section class="row g-3 mb-4 mb-lg-5" aria-label="Zoo in numbers">
+            <div class="col-12 col-sm-4 col-lg-4">
+                <div class="stat-item bg-light rounded-4 text-center p-3 p-lg-4">
+                    <p class="h2 fw-bold text-success mb-0">150+</p>
+                    <p class="small fw-semibold text-body-secondary mb-0">Animal Species</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-4">
+                <div class="stat-item bg-light rounded-4 text-center p-3 p-lg-4">
+                    <p class="h2 fw-bold text-success mb-0">50 HA</p>
+                    <p class="small fw-semibold text-body-secondary mb-0">Natural Territory</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-4">
+                <div class="stat-item bg-light rounded-4 text-center p-3 p-lg-4">
+                    <p class="h2 fw-bold text-success mb-0">100K+</p>
+                    <p class="small fw-semibold text-body-secondary mb-0">Happy Visitors</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 3: two-column section (col-lg-6) -->
+        <section class="row g-4 align-items-center mb-4 mb-lg-5">
+            <div class="col-12 col-lg-6">
+                <h2>A Day Out in the Wild</h2>
+                <p>City Zoo is home to more than 150 species across 50 hectares of open-air habitats. Walk from the African savannah to the polar pavilion in a single afternoon, meet keepers at the daily shows, and stop for lunch at our eco-cafes.</p>
+                <ul class="list-unstyled mb-3">
+                    <li class="mb-1">🕘 Open daily, 09:00 AM – 06:00 PM</li>
+                    <li class="mb-1">📍 12 Wildlife Ave, Astana</li>
+                    <li class="mb-1">📞 +7 700 123 45 67</li>
+                </ul>
+                <div class="btn-group" role="group" aria-label="Plan your visit">
+                    <a href="schedule.html" class="btn btn-outline-success">Schedule</a>
+                    <a href="map.html" class="btn btn-outline-success">Map</a>
+                    <a href="rules.html" class="btn btn-outline-success">Rules</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?w=900&auto=format&fit=crop&q=60" class="img-fluid rounded-4 shadow-sm w-100 side-img" alt="A lion resting in the safari zone">
+            </div>
+        </section>
+
+        <div class="text-center mb-4 mt-5">
+            <h2 class="mb-1">Why Visit Us?</h2>
+            <p class="text-body-secondary mb-0">Experience the best wildlife adventure in the city</p>
+        </div>
+        <!-- Three cards use CSS media queries for their layout. -->
+        <section class="why-visit-grid gap-3" aria-label="Why visit City Zoo">
+            <article class="why-visit-card p-3 p-lg-4 text-center">
+                <div class="fs-1 mb-2" aria-hidden="true">🌿</div>
+                <h3 class="h5">Natural Habitats</h3>
+                <p class="text-body-secondary small mb-0">Modern open-air enclosures carefully designed to mimic natural wildlife environments.</p>
+            </article>
+            <article class="why-visit-card p-3 p-lg-4 text-center">
+                <div class="fs-1 mb-2" aria-hidden="true">🍖</div>
+                <h3 class="h5">Daily Feeding Shows</h3>
+                <p class="text-body-secondary small mb-0">Educational interactive sessions and live feeding demonstrations by expert keepers.</p>
+            </article>
+            <article class="why-visit-card p-3 p-lg-4 text-center">
+                <div class="fs-1 mb-2" aria-hidden="true">☕</div>
+                <h3 class="h5">Eco-Cafes &amp; Playgrounds</h3>
+                <p class="text-body-secondary small mb-0">Comfortable recreation zones, family rest areas, playgrounds, and eco-friendly cafes.</p>
+            </article>
+        </section>
+
+        <div class="text-center mb-4 mt-5">
+            <h2 class="mb-1">Featured Experiences</h2>
+            <p class="text-body-secondary mb-0">Book one of our most popular guided experiences</p>
+        </div>
+        <!-- Task 8: Bootstrap cards in a card-group -->
+        <section class="card-group gap-lg-0" aria-label="Featured experiences">
+            <div class="card card-zoo">
+                <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=800&auto=format&fit=crop&q=60" class="card-img-top" alt="Guided Safari Tour">
+                <div class="card-body d-flex flex-column p-3 p-lg-4">
+                    <h3 class="card-title h5">Guided Safari Tour</h3>
+                    <p class="card-text text-body-secondary flex-grow-1">Ride through the savannah zone with an expert guide and get up close with lions, giraffes, and elephants.</p>
+                    <a href="tickets.html" class="btn btn-success align-self-start">Book Now</a>
+                </div>
+            </div>
+            <div class="card card-zoo">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Collingwood_Children%27s_Farm_-_plots_and_animals.JPG?width=800" class="card-img-top" alt="Petting Zoo Experience">
+                <div class="card-body d-flex flex-column p-3 p-lg-4">
+                    <h3 class="card-title h5">Petting Zoo Experience</h3>
+                    <p class="card-text text-body-secondary flex-grow-1">A hands-on session where kids and families can safely feed and pet gentle farm animals.</p>
+                    <a href="tickets.html" class="btn btn-success align-self-start">Book Now</a>
+                </div>
+            </div>
+            <div class="card card-zoo">
+                <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=800&auto=format&fit=crop&q=60" class="card-img-top" alt="Night Safari Adventure">
+                <div class="card-body d-flex flex-column p-3 p-lg-4">
+                    <h3 class="card-title h5">Night Safari Adventure</h3>
+                    <p class="card-text text-body-secondary flex-grow-1">Discover nocturnal species as they wake up and explore under the stars with a torch-lit guided walk.</p>
+                    <a href="tickets.html" class="btn btn-success align-self-start">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mb-4 mt-5">
+            <h2 class="mb-1">Plan Your Visit in 3 Steps</h2>
+            <p class="text-body-secondary mb-0">New to City Zoo? Here's how to make the most of your day</p>
+        </div>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-success p-3"><strong>Buy your ticket online</strong> — choose a Child, Adult, or Free pass on the Tickets page.</li>
+            <li class="list-group-item list-group-item-success p-3"><strong>Check the show schedule</strong> — plan your route around feeding times and guided tours.</li>
+            <li class="list-group-item list-group-item-success p-3"><strong>Follow the interactive map</strong> — find enclosures, cafes, and restrooms with ease.</li>
+        </ol>
+    </main>
+
+    <footer class="bg-dark text-white text-center mt-5 py-4 px-3">
+        <!-- Tasks 3, 4, 5: subscribe button, background colour button, date and time -->
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-3 mb-3">
+            <button type="button" class="btn btn-warning" data-popup-open>📬 Subscribe</button>
+            <button type="button" class="btn btn-outline-light" id="bg-color-btn">🎨 Change background</button>
+            <div class="datetime-block rounded-pill px-3 py-2" id="datetime-block"><span aria-hidden="true">📅</span> <time id="current-datetime" datetime="">Loading…</time></div>
+        </div>
+        <p class="mb-0">Developers: Jumabay Saule, Ramazan Mukhan, Nurdaulet Rashken, Saidazimov Mukhammadjan | Group SE-2501</p>
+    </footer>
+
+    <!-- Task 3: subscription pop-up (hidden by default, opened with JavaScript) -->
+    <div class="popup-overlay p-3" id="subscribe-popup" aria-hidden="true">
+        <div class="popup-box p-4 p-md-5" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+            <button type="button" class="btn-close popup-close" aria-label="Close subscription form" data-popup-close></button>
+            <h2 class="h3 mb-1 pe-4" id="subscribe-title">📬 Subscribe to City Zoo News</h2>
+            <p class="text-body-secondary">Get news about new animals, events and special offers.</p>
+            <form id="subscribe-form" data-validate novalidate>
+                <div class="alert alert-success d-none form-success" role="status">🎉 Thank you! You are now subscribed to City Zoo news.</div>
+                <div class="mb-3">
+                    <label for="sub-name" class="form-label fw-semibold">Your Name</label>
+                    <input type="text" class="form-control" id="sub-name" name="name" placeholder="Enter your name" autocomplete="name" data-label="Name" data-rules="required|min:2" aria-describedby="sub-name-error">
+                    <div class="invalid-feedback" id="sub-name-error" aria-live="polite"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="sub-email" class="form-label fw-semibold">Email Address</label>
+                    <input type="email" class="form-control" id="sub-email" name="email" placeholder="example@mail.com" autocomplete="email" data-label="Email" data-rules="required|email" aria-describedby="sub-email-error">
+                    <div class="invalid-feedback" id="sub-email-error" aria-live="polite"></div>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <button type="submit" class="btn btn-success">Subscribe</button>
+                    <button type="button" class="btn btn-outline-secondary" data-popup-close>Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
