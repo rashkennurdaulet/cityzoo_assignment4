@@ -33,4 +33,4 @@ The deployed website URL should be added here after the site is published.
 
 All four scripts are linked at the bottom of every HTML page. Developer names are in the `<footer>` of every page.
 
-Deployed website URL: _add the GitHub Pages / Netlify link here after publishing._
+Deployed website URL: https://rashkennurdaulet.github.io/cityzoo_assignment4/
